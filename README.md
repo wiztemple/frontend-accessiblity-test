@@ -10,6 +10,12 @@ This project is a front-end-only React application where you can manage a catalo
 2. **Manage Page**: Allows you to add new dogs to the catalog.
 3. **About Page**: Contains useful links for this exercise.
 
+## Live Demo
+
+You can access the live version of the app using the link below:
+
+- **Netlify Deployment**: [Dog Catalog on Netlify](https://frontend-accessibility.netlify.app/)
+
 ## Instructions for Building and Running the Application`
 
 1. **Install dependencies**:
