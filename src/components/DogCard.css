@@ -1,22 +1,15 @@
 .dog-card {
   background-color: #f4e1c6 !important;
-  border-radius: 12px;
-  /* Rounded corners for a softer look */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  /* Slightly stronger shadow for depth */
-  padding: 16px;
-  /* Padding inside the card */
-  text-align: left;
-  /* Align text to the left for better readability */
-  transition: transform 0.3s, box-shadow 0.3s;
-  /* Transition effects for hover */
+  border-radius: 12px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow for depth */
+  padding: 16px; /* Padding inside the card */
+  text-align: left; /* Align text to the left for better readability */
+  transition: transform 0.3s, box-shadow 0.3s; /* Transition effects for hover */
 }
 
 .dog-card:hover {
-  transform: translateY(-4px);
-  /* Lift effect on hover */
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
-  /* Stronger shadow on hover */
+  transform: translateY(-4px); /* Lift effect on hover */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3); /* Stronger shadow on hover */
 }
 
 /* Added a focus-within state for the entire card to improve keyboard navigation visibility. */
@@ -26,12 +19,9 @@
 }
 
 .dog-image {
-  width: 100%;
-  /* Responsive image */
-  height: auto;
-  /* Maintain aspect ratio */
-  border-radius: 12px;
-  /* Match card's corners */
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 12px; /* Match card's corners */
 }
 
 .dog-card h2 {
@@ -64,17 +54,14 @@
   display: inline-block;
   padding: 10px 20px;
   margin-top: 10px;
-  background-color: #2c70c8;
-  /* Changed the button's background color from #72b6fd to #2c70c8 for better contrast against white text. */
+  background-color: #2c70c8; /* Changed the button's background color from #72b6fd to #2c70c8 for better contrast against white text. */
   color: white;
-  font-size: 0.8rem;
-  /* Changed font sizes to use relative units (rem) instead of pixels. This allows for better scaling when users change their browser's font size. */
+  font-size: 0.8rem; /* Changed font sizes to use relative units (rem) instead of pixels. This allows for better scaling when users change their browser's font size. */
   text-align: center;
   cursor: pointer;
   border-radius: 5px;
   user-select: none;
-  border: none;
-  /* Explicitly set border: none; on the button to ensure consistent styling across browsers. */
+  border: none; /* Explicitly set border: none; on the button to ensure consistent styling across browsers. */
 }
 
 .dog-name-button:hover,

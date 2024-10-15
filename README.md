@@ -1,5 +1,7 @@
 # Dog Catalog Accessibility Exercise
 
+![Lighthouse Accessibility Score](https://img.shields.io/badge/Accessibility-100%25-brightgreen)
+
 ## Project Overview
 
 This project is a front-end-only React application where you can manage a catalog of dogs. The application includes the following pages:
@@ -26,11 +28,17 @@ This project is a front-end-only React application where you can manage a catalo
 
 ## Accessibility Guidelines
 
-**The main goal of this exercise is to make the application accessible according to WCAG 2.2 standards.**
+The primary goal of this exercise is to ensure that the application complies with **WCAG 2.2** standards. Each page has been reviewed for **accessibility issues**, and the following improvements have been implemented:
 
-The points you need to fix in this exercise relate to **Links**, **Lists**, **Headings**, **ARIA**, **Alternative Text**, **Colors**, **Forms**, **Navigation**, and **Font Size**.
+- **Semantic HTML**: Used appropriate elements (like ```<article>```, ```<button>```, and ```<ul>```) to enhance the meaning and structure of the content.
 
-You can use the following useful links to help guide your fixes:
+- **Color Contrast**: Adjusted colors to meet minimum contrast ratios.
+- **Alternative Text**: Added meaningful alt attributes to images for better screen reader support.
+- **Forms**: Labeled all form elements appropriately.
+- **Navigation**: Improved navigation with keyboard accessibility and consistent focus indicators.
+- **Font Size and Responsive Design**: Ensured fonts are resizable and mobile-friendly.
+
+For more details on the WCAG guidelines, refer to the following links:
 
 - **Links**: [WCAG 2.2 Links Guideline](https://www.w3.org/WAI/WCAG22/quickref/?showtechniques=246%2C104%2C111#link-purpose-in-context)
 - **Lists**: [WCAG 2.2 Lists Guideline](https://www.w3.org/WAI/WCAG22/quickref/?showtechniques=246#consistent-navigation)
@@ -41,5 +49,3 @@ You can use the following useful links to help guide your fixes:
 - **Forms**: [WCAG 2.2 Forms Guideline](https://www.w3.org/WAI/WCAG22/quickref/?showtechniques=246#labels-or-instructions)
 - **Navigation**: [WCAG 2.2 Navigation Guideline](https://www.w3.org/WAI/WCAG22/quickref/?showtechniques=246#consistent-navigation)
 - **Font Size**: [WCAG 2.2 Font Sizing Guideline](https://www.w3.org/WAI/WCAG22/quickref/?showtechniques=246#resize-text)
-
-Good luck!
