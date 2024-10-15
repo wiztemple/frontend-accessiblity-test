@@ -78,14 +78,16 @@ const dogs = [
 
 const Catalog: React.FC = () => {
   return (
-    <section className="catalog">
-      <h3>Dog's Catalog</h3>
-      <div className="dog-cards-container">
-        {dogs.map((dog, index) => (
-          <DogCard key={index} {...dog} />
-        ))}
-      </div>
-    </section>
+    <main className="catalog">
+      <h1>Dog's Catalog</h1>
+       <ul className="dog-cards-container">
+          {dogs.map((dog) => (
+            <li key={dog.id}>
+              <DogCard {...dog} />
+            </li>
+          ))}
+        </ul>
+    </main>
   );
 };
 
