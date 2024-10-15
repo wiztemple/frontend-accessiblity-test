@@ -17,7 +17,9 @@ You can access the live version of the app using the link below:
 - **Netlify Deployment**: [Dog Catalog on Netlify](https://frontend-accessibility.netlify.app/)
 
 ## Development Environment
-This application has been developed and tested on a MacBook. If you encounter any platform-specific issues (e.g., with dependencies or configurations), please consider checking for compatibility on your operating system and environment. Feel free to open an issue in the repository if further support is needed.
+This application was developed and tested on a MacBook. It was also tested using both the **Lighthouse Chrome extension** and **Axe DevTools** to ensure it complies with **WCAG 2.2 accessibility standards.**
+
+If you encounter any platform-specific issues, please consider checking compatibility on your system. Feel free to open an issue in the repository for further assistance.
 
 ## Instructions for Building and Running the Application`
 
