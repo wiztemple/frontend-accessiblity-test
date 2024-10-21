@@ -34,3 +34,8 @@
   height: auto; /* Maintain aspect ratio */
   border-radius: 8px; /* Match card's corners */
 }
+
+@media (max-width: 767px) {
+  .catalog ul {
+    padding-left: 0;
+  }}
