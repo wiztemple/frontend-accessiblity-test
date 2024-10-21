@@ -60,3 +60,31 @@ input {
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
+@media (max-width: 767px) {
+  .manage-container {
+    display: block;
+  }
+  .dog-form {
+    width: 90%; /* Adjust the width to be 90% on smaller screens */
+    max-width: 400px; /* Set a max-width to prevent the form from becoming too wide */
+  }
+
+  .form-group {
+    display: block;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+
+  input {
+    width: 95%; 
+    margin-top: 10px;
+  }
+  .dogs-form-image img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+  }
+}
