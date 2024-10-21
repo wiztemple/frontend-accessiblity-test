@@ -20,7 +20,6 @@ const Manage = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    console.log("New Dog Added:", dogData);
     alert(`Dog ${dogData.name} was added successfully!`);
     setDogData({
       name: "",
@@ -46,12 +45,15 @@ const Manage = () => {
               value={dogData.name}
               onChange={handleChange}
               required
-              placeholder="e.g., Charlie"
               aria-required="true"
+              aria-label="Dog name"
+              aria-describedby="name-desc"
+              placeholder="e.g., Charlie"
             />
           </div>
           <div className="form-group">
             <label htmlFor="age">Age:</label>
+            {/* - Add a further aria attributes */}
             <input
               id="age"
               type="number"
@@ -60,6 +62,9 @@ const Manage = () => {
               onChange={handleChange}
               required
               aria-required="true"
+              aria-label="Dog age"
+              aria-describedby="age-desc"
+              aria-invalid={isNaN(Number(dogData.age))}
             />
           </div>
           <div className="form-group">
@@ -72,6 +77,8 @@ const Manage = () => {
               onChange={handleChange}
               required
               aria-required="true"
+              aria-label="Dog height"
+              aria-describedby="height-desc"
               placeholder="e.g., 24 inches"
             />
           </div>
@@ -85,6 +92,8 @@ const Manage = () => {
               onChange={handleChange}
               required
               aria-required="true"
+              aria-label="Dog color"
+              aria-describedby="color-desc"
               placeholder="e.g., Golden"
             />
           </div>
@@ -98,6 +107,8 @@ const Manage = () => {
               onChange={handleChange}
               required
               aria-required="true"
+              aria-label="Favorite toy"
+              aria-describedby="toy-desc"
               placeholder="e.g., Tennis Ball"
             />
           </div>
@@ -111,19 +122,22 @@ const Manage = () => {
               onChange={handleChange}
               required
               aria-required="true"
+              aria-label="Favorite meal"
+              aria-describedby="meal-desc"
               placeholder="e.g., Chicken and Rice"
             />
           </div>
           <button
             type="submit"
             className="submit-button"
+            aria-label="Add new dog"
           >
             Add Dog
           </button>
         </form>
       </main>
       <figure className="dogs-form-image">
-        <img 
+        <img
           src="https://placedog.net/1000/300/random?id=128"
           alt="A cute dog"
           loading="lazy"

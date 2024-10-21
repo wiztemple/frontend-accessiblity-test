@@ -17,6 +17,10 @@
   gap: 16px; /* Space between cards */
 }
 
+.dog-cards-container li {
+  list-style-type: none;
+}
+
 .dog-card {
   background-color: #fff; /* White background for the card */
   border-radius: 8px; /* Rounded corners */
